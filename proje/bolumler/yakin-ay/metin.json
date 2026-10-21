@@ -1,0 +1,48 @@
+{
+  "id": "yakin-ay",
+  "baslik": "Ay, Dünya'ya İki Kat Daha Yakın Olsaydı?",
+  "ses": {
+    "voice_id": "RXCCWbOxP7Hisa63Xsv5",
+    "ad": "Adam - Calm, Relaxing and Informative",
+    "model": "eleven_multilingual_v2",
+    "ayar": {
+      "stability": 0.45,
+      "similarity_boost": 0.8,
+      "style": 0.25,
+      "use_speaker_boost": true,
+      "speed": 1.06
+    }
+  },
+  "altyaziDuzelt": [
+    [
+      "üç virgül sekiz",
+      "3,8"
+    ]
+  ],
+  "sahneler": [
+    {
+      "sahne": "sahil",
+      "metin": "Gökyüzüne bak. Ay, şimdikinin iki katı büyüklüğünde görünüyor. Çünkü Dünya'ya iki kat daha yakın. Peki, Ay bu kadar yakın olsaydı ne olurdu?"
+    },
+    {
+      "sahne": "gelgit",
+      "metin": "Önce denizler çıldırırdı. Gelgit kuvveti mesafenin küpüyle artar. Yani Ay iki kat yakınsa, gelgit kuvveti tam sekiz kat güçlenir. Kıyılar her gün sular altında kalırdı."
+    },
+    {
+      "sahne": "dolunay",
+      "metin": "Geceler de değişirdi. Dolunay, bugünkünden dört kat daha parlak olurdu."
+    },
+    {
+      "sahne": "tutulma",
+      "metin": "Güneş tutulmaları ise çok daha sık ve çok daha uzun yaşanırdı. Çünkü dev Ay, Güneş'i her seferinde tamamen örterdi."
+    },
+    {
+      "sahne": "uzaklasma",
+      "metin": "İşin ilginç yanı, Ay gerçekten bir zamanlar çok daha yakındı. Ve bugün hâlâ, her yıl yaklaşık üç virgül sekiz santimetre uzaklaşıyor."
+    },
+    {
+      "sahne": "kapanis",
+      "metin": "Evrenin bir sonraki sorusu yarın yine burada olacak. Abone ol, kaçırma."
+    }
+  ]
+}

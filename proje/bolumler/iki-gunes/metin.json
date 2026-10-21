@@ -1,0 +1,48 @@
+{
+  "id": "iki-gunes",
+  "baslik": "Dünya'nın İki Güneşi Olsaydı?",
+  "ses": {
+    "voice_id": "J17lijyP1BHYcM7ld0Rg",
+    "ad": "Adam (Türkçe)",
+    "model": "eleven_multilingual_v2",
+    "ayar": {
+      "stability": 0.45,
+      "similarity_boost": 0.8,
+      "style": 0.25,
+      "use_speaker_boost": true,
+      "speed": 1.06
+    }
+  },
+  "altyaziDuzelt": [
+    [
+      "on altı b",
+      "16b"
+    ]
+  ],
+  "sahneler": [
+    {
+      "sahne": "yuzey",
+      "metin": "Gökyüzüne bak. Bir değil, iki güneş var. Güneş benzeri yıldızların neredeyse yarısı tek değil, bir eşle birlikte yaşar. Peki, Dünya'nın iki güneşi olsaydı?"
+    },
+    {
+      "sahne": "golge",
+      "metin": "Önce gölgen ikiye bölünürdü. Her şeyin iki gölgesi olurdu."
+    },
+    {
+      "sahne": "gunbatimi",
+      "metin": "Gün batımı iki kez yaşanırdı. Biri batar, gökyüzü kızarır... ve ardından ikincisi."
+    },
+    {
+      "sahne": "uzay",
+      "metin": "Ama asıl sorun ısı. İkinci güneş de bizimki kadar parlak olsaydı, Dünya'ya gelen enerji iki katına çıkardı. Okyanuslar buharlaşmaya başlardı. Yaşanabilir kalmak için Dünya'nın, bugünkünden yaklaşık yüzde kırk daha uzakta dönmesi gerekirdi."
+    },
+    {
+      "sahne": "kepler",
+      "metin": "Ve bu bir hayal değil. 2011'de Kepler teleskobu, iki yıldızın etrafında dönen gerçek bir gezegen buldu: Kepler on altı b."
+    },
+    {
+      "sahne": "kapanis",
+      "metin": "Evrenin bir sonraki sorusu yarın yine burada olacak. Abone ol, kaçırma."
+    }
+  ]
+}
