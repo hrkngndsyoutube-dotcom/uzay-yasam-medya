@@ -57,6 +57,18 @@ export const CAROUSELLER: Record<string, CarouselSet> = {
 			{tur: 'son', arka: 'carousel/nasa/galaksi.jpg', ust: 'HANGİSİ SENİ', vurgu: 'ŞAŞIRTTI?', metin: 'Yorumlara numarasını yaz 👇'},
 		],
 	},
+	'uzaydan-turkiye': {
+		id: 'uzaydan-turkiye',
+		slaytlar: [
+			{tur: 'kapak', arka: 'carousel/turkiye/t4.jpg', sigdir: true, kaynak: 'NASA', ust: 'UZAYDAN', vurgu: 'TÜRKİYE', metin: '4. fotoğraf Türkiye’nin çatısı →'},
+			{tur: 'bilgi', arka: 'carousel/turkiye/t0.jpg', sigdir: true, kaynak: 'ESA/NASA – T. Pesquet', no: '01', ust: 'GECE', vurgu: 'İSTANBUL', rakam: '15+ MİLYON İNSAN', metin: 'Uzay İstasyonu’ndan çekildi. Işıkları ikiye bölen karanlık şerit, Boğaz.'},
+			{tur: 'bilgi', arka: 'carousel/turkiye/t2.jpg', sigdir: true, kaynak: 'NASA', no: '02', ust: 'İKİ KITAYI AYIRAN', vurgu: 'BOĞAZ', rakam: '~31 KM', metin: 'Karadeniz’i Marmara’ya bağlayan Boğaz, uzaydan bir nehir gibi görünüyor. En dar yeri yaklaşık 700 metre.'},
+			{tur: 'bilgi', arka: 'carousel/turkiye/t5.jpg', sigdir: true, kaynak: 'NASA', no: '03', ust: 'BEMBEYAZ BİR LEKE:', vurgu: 'TUZ GÖLÜ', rakam: '2. BÜYÜK GÖL', metin: 'Çok sığ bir göl. Yazın suyunun büyük kısmı buharlaşır, geride bembeyaz bir tuz tabakası kalır.'},
+			{tur: 'bilgi', arka: 'carousel/turkiye/t6.jpg', sigdir: true, kaynak: 'NASA', no: '04', ust: 'TÜRKİYE’NİN ÇATISI', vurgu: 'AĞRI DAĞI', rakam: '5.137 M', metin: 'Türkiye’nin en yüksek dağı. Uzaydan bakınca karlı zirvesi, çevresindeki düzlüklerin ortasında bembeyaz parlıyor.'},
+			{tur: 'bilgi', arka: 'carousel/turkiye/t3.jpg', sigdir: true, kaynak: 'ESA/NASA', no: '05', ust: 'GECE UZAYDAN', vurgu: 'TÜRKİYE', rakam: '~400 KM', metin: 'Uzay İstasyonu yaklaşık 400 km yukarıdan Türkiye’yi gece böyle görüyor. Ufuktaki ince parlak çizgi, atmosferimiz.'},
+			{tur: 'son', arka: 'carousel/turkiye/t0.jpg', sigdir: true, ust: 'SEN HANGİ', vurgu: 'IŞIKTASIN?', metin: 'Yorumlara şehrini yaz 👇'},
+		],
+	},
 };
 
 const gumus: React.CSSProperties = {
