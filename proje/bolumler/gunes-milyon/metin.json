@@ -1,0 +1,64 @@
+{
+ "id": "gunes-milyon",
+ "baslik": "Güneş'in İçine 1,3 Milyon Dünya Sığar",
+ "ses": {
+  "voice_id": "RXCCWbOxP7Hisa63Xsv5",
+  "ad": "Adam - Calm, Relaxing and Informative",
+  "model": "eleven_multilingual_v2",
+  "ayar": {
+   "stability": 0.4,
+   "similarity_boost": 0.8,
+   "style": 0.35,
+   "use_speaker_boost": true,
+   "speed": 1.12
+  }
+ },
+ "altyaziDuzelt": [
+  [
+   "bir milyon üç yüz bin",
+   "1,3 milyon"
+  ],
+  [
+   "yüz dokuz",
+   "109"
+  ],
+  [
+   "yüzde doksan dokuz virgül sekizi",
+   "%99,8'i"
+  ],
+  [
+   "dört milyon",
+   "4 milyon"
+  ]
+ ],
+ "sahneler": [
+  {
+   "sahne": "hook",
+   "metin": "Güneş'in içine bir milyon üç yüz bin Dünya sığar. Ama videonun sonunda, Güneş'i küçücük gösteren bir yıldız var."
+  },
+  {
+   "sahne": "olcek",
+   "metin": "Önce şunu düşün. Güneş'in çapı boyunca, yüz dokuz Dünya'yı yan yana dizebilirsin."
+  },
+  {
+   "sahne": "kutle",
+   "metin": "Güneş Sistemi'ndeki bütün kütlenin yüzde doksan dokuz virgül sekizi, sadece Güneş'te. Gezegenler, uydular, asteroitler... hepsi geriye kalan minicik payı paylaşıyor."
+  },
+  {
+   "sahne": "yakit",
+   "metin": "Ve her saniye, yaklaşık dört milyon ton kütlesini ışığa ve ısıya çeviriyor. Buna rağmen, milyarlarca yıl daha yetecek yakıtı var."
+  },
+  {
+   "sahne": "ortalama",
+   "metin": "Ama işin garibi şu: bu dev, aslında sıradan bir yıldız."
+  },
+  {
+   "sahne": "betelgeuse",
+   "metin": "Orion takımyıldızındaki Betelgeuse'u Güneş'in yerine koysaydık, yüzeyi Mars'ın yörüngesini bile geçerdi. Dünya, bu yıldızın tam içinde kalırdı."
+  },
+  {
+   "sahne": "kapanis",
+   "metin": "Yani Güneş dev ama evren çok daha büyük. Abone ol, evrenin bir sonraki sırrını kaçırma."
+  }
+ ]
+}

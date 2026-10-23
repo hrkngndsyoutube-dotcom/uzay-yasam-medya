@@ -1,0 +1,17 @@
+{
+  "id": "mars-skafandrasiz",
+  "baslik": "Mars'ta Kaskını Çıkarırsan 15 Saniyen Var",
+  "ses": {"voice_id": "RXCCWbOxP7Hisa63Xsv5", "ad": "Adam - Calm, Relaxing and Informative", "model": "eleven_multilingual_v2",
+          "ayar": {"stability": 0.4, "similarity_boost": 0.8, "style": 0.35, "use_speaker_boost": true, "speed": 1.12}},
+  "altyaziDuzelt": [["yüzde sıfır virgül altısı", "%0,6'sı"], ["on beş", "15"], ["doksan", "90"], ["eksi altmış", "−60"]],
+  "sahneler": [
+    {"sahne": "hook", "metin": "Mars'ta kaskını çıkarırsan, önce tükürüğün kaynar. Sonra sadece on beş saniyen kalır. Ama sonunda seni kurtarabilecek bir şey var."},
+    {"sahne": "nefes", "metin": "Çoğu kişi ilk hatayı burada yapar: nefesini tutar. Dışarıdaki basınç, Dünya'dakinin yalnızca yüzde sıfır virgül altısı. Tutulan nefes, ciğerlerini yırtabilir."},
+    {"sahne": "kaynama", "metin": "Tükürüğün neden kaynar? Sıcaktan değil. Basınç o kadar düşük ki su, vücut sıcaklığında kaynar."},
+    {"sahne": "hava", "metin": "Etraftaki hava ise neredeyse tamamen karbondioksit. Kanına oksijen gitmez."},
+    {"sahne": "bilinc", "metin": "On beş saniye dolduğunda, bilincini kaybedersin."},
+    {"sahne": "soguk", "metin": "Eksi altmış derecelik soğuk mu? Seni o kadar hızlı öldüremez. İnce hava, ısıyı çok yavaş çeker."},
+    {"sahne": "umut", "metin": "Ve o umut: yaklaşık doksan saniye içinde basınçlı bir yere alınırsan, hayatta kalma şansın var."},
+    {"sahne": "kapanis", "metin": "Evrenin bir sonraki sorusu yarın yine burada olacak. Abone ol, kaçırma."}
+  ]
+}

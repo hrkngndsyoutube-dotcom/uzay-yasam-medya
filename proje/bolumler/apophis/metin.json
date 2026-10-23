@@ -1,0 +1,88 @@
+{
+ "id": "apophis",
+ "baslik": "2029'da Türksat Uydularından Yakın Geçecek Asteroit",
+ "ses": {
+  "voice_id": "RXCCWbOxP7Hisa63Xsv5",
+  "ad": "Adam - Calm, Relaxing and Informative",
+  "model": "eleven_multilingual_v2",
+  "ayar": {
+   "stability": 0.4,
+   "similarity_boost": 0.8,
+   "style": 0.35,
+   "use_speaker_boost": true,
+   "speed": 1.12
+  }
+ },
+ "altyaziDuzelt": [
+  [
+   "on üç nisan",
+   "13 Nisan"
+  ],
+  [
+   "iki bin yirmi dokuzda",
+   "2029'da"
+  ],
+  [
+   "iki bin yirmi dokuz",
+   "2029"
+  ],
+  [
+   "iki bin dörtte",
+   "2004'te"
+  ],
+  [
+   "yüzde iki virgül yedi",
+   "%2,7"
+  ],
+  [
+   "yüzde iki virgül yediydi",
+   "%2,7'ydi"
+  ],
+  [
+   "otuz altı bin",
+   "36.000"
+  ],
+  [
+   "otuz iki bin",
+   "32.000"
+  ],
+  [
+   "yüz altmış bin",
+   "160.000"
+  ],
+  [
+   "yüz yıl",
+   "100 yıl"
+  ]
+ ],
+ "sahneler": [
+  {
+   "sahne": "hook",
+   "metin": "On üç Nisan iki bin yirmi dokuz gecesi, Çamlıca Kulesi büyüklüğünde bir asteroit, Türksat uydularından daha yakından geçecek. Ve sen onu, Türkiye'den çıplak gözle görebileceksin."
+  },
+  {
+   "sahne": "adi",
+   "metin": "Adı Apophis. Mısır mitolojisinde, kaos tanrısı. İki bin dörtte keşfedildiğinde, Dünya'ya çarpma ihtimali yüzde iki virgül yedi hesaplandı. Bu, o güne kadarki en yüksek risk rekoruydu."
+  },
+  {
+   "sahne": "mesafe",
+   "metin": "Peki ne kadar yakın? Türksat uyduları, Dünya'nın otuz altı bin kilometre yukarısında dönüyor. Apophis ise otuz iki bin kilometreden geçecek. Yani uydularımızın iç tarafından."
+  },
+  {
+   "sahne": "carpsaydi",
+   "metin": "Ya çarpsaydı? Açığa çıkacak enerji, Hiroşima bombasının yaklaşık yüz altmış bin katı olurdu."
+  },
+  {
+   "sahne": "iyi",
+   "metin": "Ama içini rahatlat. NASA'nın ölçümlerine göre, en az yüz yıl boyunca çarpma riski yok."
+  },
+  {
+   "sahne": "sen",
+   "metin": "O gece yapman gereken tek şey, şehir ışıklarından uzaklaşıp başını kaldırmak. Bu büyüklükte bir asteroidin bu kadar yakından geçmesi, birkaç bin yılda bir yaşanıyor."
+  },
+  {
+   "sahne": "kapanis",
+   "metin": "Takvimine şimdiden yaz. Ve abone ol."
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+[
+ {"ad": "kapak1", "kalite": "high", "prompt": "Extreme close-up of an astronaut on the surface of Mars pulling off their helmet, the visor half lifted revealing a shocked human face with wide eyes, red dust swirling violently around, the rusty Martian landscape and a dusty pink sky behind, intense cinematic tension, face sharply lit by a low sun."},
+ {"ad": "kapak2", "kalite": "high", "prompt": "An astronaut's helmet visor cracking open on Mars, spiderweb cracks across the glass, the astronaut's terrified face visible inside reflecting the red Martian desert, tiny particles escaping through the cracks, extreme close-up, dramatic rim light."},
+ {"ad": "kapak3", "kalite": "high", "prompt": "Low angle dramatic shot of an astronaut standing on a Martian ridge holding their removed helmet in one hand, bare head exposed, breath turning into a puff of vapor in the thin air, enormous red desert and huge dusty sky behind, epic and ominous."},
+ {"ad": "g02", "prompt": "Close-up of a human face on Mars without a helmet, eyes squeezed shut, mouth slightly open with a faint mist of evaporating moisture around the lips, red dust in the air, harsh orange light, intense but not gory."},
+ {"ad": "g03", "prompt": "Wide shot of an astronaut without a helmet kneeling on the red sand of Mars clutching their chest, struggling, thin pale pink sky, small distant sun, lonely vast desert, cinematic."},
+ {"ad": "g04", "prompt": "View of the curved horizon of Mars from low orbit showing an extremely thin hazy atmosphere layer glowing faintly against the black of space, sunlight grazing the surface."},
+ {"ad": "g05", "prompt": "Macro shot of water droplets violently boiling and turning to vapor on a dusty spacesuit glove on Mars, tiny bubbles erupting from the droplets, red rocky background out of focus."},
+ {"ad": "g06", "prompt": "A towering Martian dust storm rolling across the red plains, swirling orange dust filling the sky, a tiny astronaut silhouette in the foreground for scale."},
+ {"ad": "g07", "prompt": "First-person view lying on the red ground of Mars looking up at the pale pink sky, vision blurring and darkening at the edges as if losing consciousness, a dropped helmet lying nearby in the dust."},
+ {"ad": "g08", "prompt": "Frost-covered rocks on Mars at dawn, thin white carbon dioxide frost on red stones, cold blue morning light, a faint small sun on the horizon, eerie stillness."},
+ {"ad": "g09", "prompt": "A rescuer astronaut running across the Martian dust carrying an unconscious crew member toward a glowing open airlock of a Mars habitat, dramatic warm interior light spilling out, urgent action."},
+ {"ad": "g10", "prompt": "The planet Mars seen from space, fully lit, detailed red surface with Valles Marineris visible, thin atmosphere glow, black starry background, majestic."}
+]

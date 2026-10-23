@@ -16,16 +16,18 @@ import {Altyazi, FontYukle} from '../Altyazi';
 import {BOLUMLER} from '../bolumler';
 import {tohumlu} from '../gok';
 import {Cekim, GorselPlan, Kart, PLANLAR} from './plan';
+import {Apophis3D} from './Apophis3D';
 
 // GÖRSEL TABANLI UZAY SHORT'U (1080x1920)
 // Fotogerçekçi görseller + sinematik hareket + poster başlık + kartlar + altyazı + müzik
 
-export type GorselShortProps = {bolum: string};
+export type GorselShortProps = {bolum: string; plan?: string; sonKapak?: string}; // sonKapak: YouTube için videonun sonuna eklenen kapak karesi // plan: A/B varyant anahtarı
 const FPS = 30;
 const GECIS = 9; // görseller arası geçiş (kare)
+const SON_KAPAK = 15; // YouTube kare seçicisi için sondaki kapak (0,5 sn)
 
 export const gorselMetadata: CalculateMetadataFunction<GorselShortProps> = ({props}) => ({
-	durationInFrames: Math.ceil(BOLUMLER[props.bolum].toplam * FPS),
+	durationInFrames: Math.ceil(BOLUMLER[props.bolum].toplam * FPS) + (props.sonKapak ? SON_KAPAK : 0),
 	fps: FPS,
 	width: 1080,
 	height: 1920,
@@ -164,12 +166,14 @@ const Acilis: React.FC<{a: GorselPlan['acilis']; sure: number}> = ({a, sure}) =>
 			<AbsoluteFill style={{background: 'linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 36%, rgba(0,0,0,0) 52%)'}} />
 			<div style={{position: 'absolute', top: 95, left: 40, right: 40, textAlign: 'center', transform: `scale(${otur})`}}>
 				<div style={{fontFamily: 'UzayYazi, sans-serif', color: '#fff', letterSpacing: 10, fontSize: 32, opacity: 0.85, marginBottom: 18}}>UZAY&amp;YAŞAM</div>
-				<div style={gumus}>{a.ust}</div>
+				<div style={{...gumus, fontSize: a.ustBoyut ?? 150}}>{a.ust}</div>
 				<div
 					style={{
 						fontFamily: 'UzayKapak, Impact, sans-serif',
-						fontSize: 132,
+						fontSize: a.vurguBoyut ?? 132,
 						lineHeight: 1.02,
+						paddingTop: 16,
+						marginTop: -16,
 						color: KAPAK_RENK.vurgu,
 						textTransform: 'uppercase',
 						textShadow: `0 0 ${24 * parilti}px rgba(56,217,255,0.75), 0 6px 0 rgba(0,0,0,0.85), 0 14px 30px rgba(0,0,0,0.8)`,
@@ -177,7 +181,7 @@ const Acilis: React.FC<{a: GorselPlan['acilis']; sure: number}> = ({a, sure}) =>
 				>
 					{a.vurgu}
 				</div>
-				<div style={{...gumus, fontSize: 132}}>{a.alt}</div>
+				{a.alt ? <div style={{...gumus, fontSize: 132}}>{a.alt}</div> : null}
 			</div>
 		</AbsoluteFill>
 	);
@@ -248,9 +252,9 @@ const Kapanis: React.FC<{abone: number}> = ({abone}) => {
 };
 
 // ---------- Ana video ----------
-export const GorselShort: React.FC<GorselShortProps> = ({bolum}) => {
+export const GorselShort: React.FC<GorselShortProps> = ({bolum, plan: planAdi, sonKapak}) => {
 	const b = BOLUMLER[bolum];
-	const plan = PLANLAR[bolum];
+	const plan = PLANLAR[planAdi ?? bolum];
 	const toplam = Math.ceil(b.toplam * FPS);
 	const kapanisKare = Math.round(plan.kapanisBas * FPS);
 	const aboneKelime = b.kelimeler.find((w) => w.k.toLocaleLowerCase('tr-TR').startsWith('abone'));
@@ -263,7 +267,13 @@ export const GorselShort: React.FC<GorselShortProps> = ({bolum}) => {
 				const son = i < plan.cekimler.length - 1 ? Math.round(plan.cekimler[i + 1].bas * FPS) : toplam;
 				return (
 					<Sequence key={i} from={bas} durationInFrames={son - bas}>
-						<CekimGoster c={{...c, gorsel: klasor + c.gorsel}} sure={son - bas} ilk={i === 0} />
+						{c.gorsel === '3d:apophis' ? (
+							<Gecis3D sure={son - bas}>
+								<Apophis3D sure={son - bas} />
+							</Gecis3D>
+						) : (
+							<CekimGoster c={{...c, gorsel: klasor + c.gorsel}} sure={son - bas} ilk={i === 0} />
+						)}
 					</Sequence>
 				);
 			})}
@@ -276,13 +286,20 @@ export const GorselShort: React.FC<GorselShortProps> = ({bolum}) => {
 					<ZamanliKart k={k} />
 				</Sequence>
 			))}
-			<Sequence durationInFrames={Math.round(3.8 * FPS)}>
-				<Acilis a={plan.acilis} sure={Math.round(3.8 * FPS)} />
-			</Sequence>
+			{(plan.acilisSure ?? 3.8) > 0 ? (
+				<Sequence durationInFrames={Math.round((plan.acilisSure ?? 3.8) * FPS)}>
+					<Acilis a={plan.acilis} sure={Math.round((plan.acilisSure ?? 3.8) * FPS)} />
+				</Sequence>
+			) : null}
+			{plan.darbeSesi ? (
+				<Sequence from={1}>
+					<Audio src={staticFile(plan.darbeSesi)} volume={0.55} />
+				</Sequence>
+			) : null}
 			<Sequence from={kapanisKare}>
 				<Kapanis abone={aboneKelime ? Math.round(aboneKelime.bas * FPS) - kapanisKare : 90} />
 			</Sequence>
-			<Altyazi kelimeler={b.kelimeler} ust="66%" />
+			<Altyazi kelimeler={b.kelimeler.filter((w) => w.bas >= (plan.altyaziBaslangic ?? 0))} ust="66%" />
 			{b.ses ? <Audio src={staticFile(b.ses)} /> : null}
 			{plan.muzik ? (
 				<Audio
@@ -290,6 +307,16 @@ export const GorselShort: React.FC<GorselShortProps> = ({bolum}) => {
 					volume={(f) => interpolate(f, [0, 30, toplam - 45, toplam], [0, 0.16, 0.16, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})}
 				/>
 			) : null}
+			{sonKapak ? (
+				<Sequence from={toplam}>
+					<Img src={staticFile(sonKapak)} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+				</Sequence>
+			) : null}
 		</AbsoluteFill>
 	);
+};
+
+const Gecis3D: React.FC<{sure: number; children: React.ReactNode}> = ({children}) => {
+	const f = useCurrentFrame();
+	return <AbsoluteFill style={{opacity: interpolate(f, [0, GECIS], [0, 1], {extrapolateRight: 'clamp'})}}>{children}</AbsoluteFill>;
 };
