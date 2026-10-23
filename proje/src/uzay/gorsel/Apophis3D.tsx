@@ -1,6 +1,7 @@
 import React from 'react';
 import {ThreeCanvas} from '@remotion/three';
-import {AbsoluteFill, Easing, continueRender, delayRender, interpolate, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
+import {AbsoluteFill, Easing, interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
+import {DunyaMalzeme} from './DunyaDoku';
 import * as THREE from 'three';
 import {useThree} from '@react-three/fiber';
 import {tohumlu} from '../gok';
@@ -47,16 +48,6 @@ const Kamera: React.FC<{konum: THREE.Vector3; hedef: THREE.Vector3}> = ({konum, 
 export const Apophis3D: React.FC<{sure: number}> = ({sure}) => {
 	const f = useCurrentFrame();
 	const {width, height} = useVideoConfig();
-	const [doku, setDoku] = React.useState<THREE.Texture | null>(null);
-	const [handle] = React.useState(() => delayRender('dunya dokusu'));
-	React.useEffect(() => {
-		new THREE.TextureLoader().load(staticFile('doku/dunya.jpg'), (t) => {
-			t.colorSpace = THREE.SRGBColorSpace;
-			t.anisotropy = 8;
-			setDoku(t);
-			continueRender(handle);
-		});
-	}, [handle]);
 
 	const yildizlar = React.useMemo(() => {
 		const r = tohumlu(77);
@@ -135,7 +126,7 @@ export const Apophis3D: React.FC<{sure: number}> = ({sure}) => {
 				<group rotation={[0.41, 0, 0]}>
 					<mesh rotation={[0, dunyaDon, 0]}>
 						<sphereGeometry args={[1, 96, 96]} />
-						{doku ? <meshStandardMaterial map={doku} roughness={0.85} metalness={0} /> : <meshStandardMaterial color="#2a5bd7" />}
+						<DunyaMalzeme />
 					</mesh>
 				</group>
 				<mesh>

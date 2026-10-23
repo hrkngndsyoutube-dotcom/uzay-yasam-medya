@@ -6,6 +6,8 @@ import gunesMilyon from './gunes-milyon.json';
 import gunesMilyonB from './gunes-milyon-b.json';
 import apophis from './apophis.json';
 import apophisB from './apophis-b.json';
+import futbolGunes from './futbol-gunes.json';
+import futbolGunesB from './futbol-gunes-b.json';
 
 export type BolumZaman = {
 	id: string;
@@ -24,4 +26,6 @@ export const BOLUMLER: Record<string, BolumZaman> = {
 	'gunes-milyon-b': gunesMilyonB as BolumZaman,
 	'apophis': apophis as BolumZaman,
 	'apophis-b': apophisB as BolumZaman,
+	'futbol-gunes': futbolGunes as BolumZaman,
+	'futbol-gunes-b': futbolGunesB as BolumZaman,
 };

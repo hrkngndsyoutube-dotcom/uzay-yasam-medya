@@ -218,3 +218,47 @@ PLANLAR['apophis-b'] = {
 	kartlar: [{bas: 3.4, son: 5.9, baslik: '%2,7', alt: 'bir zamanlar çarpma ihtimali', renk: '#ff4d4d'}, ...apophisB.kartlar],
 	kapanisBas: apophisB.kapanisBas,
 };
+
+// GÜNEŞ FUTBOL TOPU OLSA — Türkiye ölçeği (Taksim) + 3D dünya küresi rotası
+PLANLAR['futbol-gunes'] = {
+	acilis: {etiket: '', ust: '', vurgu: '', alt: ''},
+	acilisSure: 0,
+	darbeSesi: 'muzik/darbe.wav',
+	cekimler: [
+		{gorsel: 'g01.jpg', bas: 0, hareket: 'yaklas', efekt: ['sarsinti', 'kor'], odak: [0.5, 0.65]},
+		{gorsel: 'g08.jpg', bas: 3.9, hareket: 'yukari', efekt: ['toz'], odak: [0.5, 0.4]},
+		{gorsel: 'g09.jpg', bas: 6.2, hareket: 'yaklas', odak: [0.5, 0.5]},
+		{gorsel: 'g02.jpg', bas: 8.0, hareket: 'yaklas', odak: [0.5, 0.5]},
+		{gorsel: 'g01.jpg', bas: 11.0, hareket: 'uzaklas', efekt: ['kor'], odak: [0.5, 0.6]},
+		{gorsel: 'g03.jpg', bas: 14.0, hareket: 'yaklas', odak: [0.5, 0.5]},
+		{gorsel: 'g04.jpg', bas: 18.6, hareket: 'yaklas', efekt: ['toz'], odak: [0.5, 0.5]},
+		{gorsel: 'g05.jpg', bas: 23.0, hareket: 'yukari', odak: [0.5, 0.5]},
+		{gorsel: 'g06.jpg', bas: 29.4, hareket: 'sola', efekt: ['toz'], odak: [0.5, 0.45]},
+		{gorsel: 'g07.jpg', bas: 34.1, hareket: 'yaklas', odak: [0.5, 0.4]},
+		{gorsel: '3d:proxima', bas: 37.2, hareket: 'yaklas'},
+		{gorsel: 'g09.jpg', bas: 43.6, hareket: 'uzaklas', efekt: ['karar', 'toz'], odak: [0.5, 0.5]},
+	],
+	kartlar: [
+		{bas: 0.6, son: 3.8, baslik: 'GÜNEŞ = FUTBOL TOPU', alt: '22 cm, Taksim Meydanı’nda', renk: '#ffd23f'},
+		{bas: 9.0, son: 10.9, baslik: '2 MM', alt: 'Dünya: toplu iğne başı', renk: '#38d9ff'},
+		{bas: 11.8, son: 13.9, baslik: '24 METRE', alt: 'Dünya’nın toptan uzaklığı', renk: '#ffffff'},
+		{bas: 14.9, son: 17.9, baslik: '0,5 MM · 6 CM', alt: 'Ay ve Dünya’ya uzaklığı', renk: '#cfd8e3'},
+		{bas: 20.1, son: 22.7, baslik: '2 CM · 120 M', alt: 'Jüpiter', renk: '#ff8a3d'},
+		{bas: 24.7, son: 28.9, baslik: '700 METRE', alt: 'Neptün: Galatasaray Lisesi', renk: '#7cc4ff'},
+		{bas: 32.5, son: 36.9, baslik: '~4 KM', alt: 'Voyager 1: Ortaköy', renk: '#7cf0a8'},
+	],
+	kapanisBas: 45.6,
+	muzik: 'muzik/uzay-ambient.wav',
+};
+const futbolB = sahneKaydir(PLANLAR['futbol-gunes'], 'futbol-gunes', 'futbol-gunes-b');
+PLANLAR['futbol-gunes-b'] = {
+	...PLANLAR['futbol-gunes'],
+	cekimler: [
+		{gorsel: 'g07.jpg', bas: 0, hareket: 'yaklas', efekt: ['sarsinti', 'toz'], odak: [0.5, 0.4]},
+		{gorsel: 'g06.jpg', bas: 2.9, hareket: 'sola', odak: [0.5, 0.45]},
+		{gorsel: 'g01.jpg', bas: 5.2, hareket: 'yaklas', efekt: ['kor'], odak: [0.5, 0.65]},
+		...futbolB.cekimler,
+	],
+	kartlar: [{bas: 0.3, son: 4.6, baslik: '~4 KM', alt: 'Voyager 1, Taksim’den Ortaköy’e', renk: '#7cf0a8'}, ...futbolB.kartlar],
+	kapanisBas: futbolB.kapanisBas,
+};

@@ -1,0 +1,76 @@
+{
+ "id": "futbol-gunes-b",
+ "baslik": "Güneş Futbol Topu Olsa",
+ "ses": {
+  "voice_id": "RXCCWbOxP7Hisa63Xsv5",
+  "ad": "Adam - Calm, Relaxing and Informative",
+  "model": "eleven_multilingual_v2",
+  "ayar": {
+   "stability": 0.4,
+   "similarity_boost": 0.8,
+   "style": 0.35,
+   "use_speaker_boost": true,
+   "speed": 1.12
+  }
+ },
+ "altyaziDuzelt": [
+  [
+   "yirmi dört",
+   "24"
+  ],
+  [
+   "altı santim",
+   "6 santim"
+  ],
+  [
+   "yüz yirmi",
+   "120"
+  ],
+  [
+   "yedi yüz",
+   "700"
+  ],
+  [
+   "kırk dokuz",
+   "49"
+  ],
+  [
+   "altı bin üç yüz",
+   "6.300"
+  ]
+ ],
+ "sahneler": [
+  {
+   "sahne": "hook",
+   "metin": "Bu ölçekte insanlığın gönderdiği en uzak araç, Taksim'den Ortaköy'e ancak varmış. Güneş bir futbol topu olsaydı, gerisi nerede olurdu?"
+  },
+  {
+   "sahne": "dunya",
+   "metin": "Dünya, bir toplu iğnenin başı kadar olurdu. Ve toptan yirmi dört metre uzakta dururdu."
+  },
+  {
+   "sahne": "ay",
+   "metin": "Ay mı? Bir kum tanesi. Dünya'dan sadece altı santim ötede."
+  },
+  {
+   "sahne": "jupiter",
+   "metin": "En büyük gezegen Jüpiter, küçük bir bilye. Yüz yirmi metre ötede."
+  },
+  {
+   "sahne": "neptun",
+   "metin": "En uzak gezegen Neptün ise yedi yüz metre uzakta. İstiklal Caddesi'nde, Galatasaray Lisesi'nin önünde."
+  },
+  {
+   "sahne": "voyager",
+   "metin": "İnsanlığın gönderdiği en uzak araç Voyager Bir, kırk dokuz yıldır yolda. Bu ölçekte, Ortaköy'e daha yeni varmış."
+  },
+  {
+   "sahne": "yildiz",
+   "metin": "Ve en yakın yıldız? Altı bin üç yüz kilometre ötede. Moğolistan'da."
+  },
+  {
+   "sahne": "kapanis",
+   "metin": "Evren işte bu kadar boş. Ve sen, o toplu iğnenin üstündesin. Abone ol."
+  }
+ ]
+}

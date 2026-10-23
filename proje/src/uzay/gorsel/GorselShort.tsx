@@ -17,6 +17,7 @@ import {BOLUMLER} from '../bolumler';
 import {tohumlu} from '../gok';
 import {Cekim, GorselPlan, Kart, PLANLAR} from './plan';
 import {Apophis3D} from './Apophis3D';
+import {Rota3D} from './Rota3D';
 
 // GÖRSEL TABANLI UZAY SHORT'U (1080x1920)
 // Fotogerçekçi görseller + sinematik hareket + poster başlık + kartlar + altyazı + müzik
@@ -270,6 +271,18 @@ export const GorselShort: React.FC<GorselShortProps> = ({bolum, plan: planAdi, s
 						{c.gorsel === '3d:apophis' ? (
 							<Gecis3D sure={son - bas}>
 								<Apophis3D sure={son - bas} />
+							</Gecis3D>
+						) : c.gorsel === '3d:proxima' ? (
+							<Gecis3D sure={son - bas}>
+								<Rota3D
+									sure={son - bas}
+									bas={[41.037, 28.985]}
+									hedefYon={[47.92, 106.92]}
+									oran={6346 / 5964}
+									basEtiket={['GÜNEŞ = TOP', 'Taksim']}
+									sonEtiket={['EN YAKIN YILDIZ', 'Proxima Centauri']}
+									ortaEtiket="6.300 KM"
+								/>
 							</Gecis3D>
 						) : (
 							<CekimGoster c={{...c, gorsel: klasor + c.gorsel}} sure={son - bas} ilk={i === 0} />
