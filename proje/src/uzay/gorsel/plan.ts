@@ -247,7 +247,7 @@ PLANLAR['futbol-gunes'] = {
 		{bas: 24.7, son: 28.9, baslik: '700 METRE', alt: 'Neptün: Galatasaray Lisesi', renk: '#7cc4ff'},
 		{bas: 32.5, son: 36.9, baslik: '~4 KM', alt: 'Voyager 1: Ortaköy', renk: '#7cf0a8'},
 	],
-	kapanisBas: 45.6,
+	kapanisBas: 46.3,
 	muzik: 'muzik/uzay-ambient.wav',
 };
 const futbolB = sahneKaydir(PLANLAR['futbol-gunes'], 'futbol-gunes', 'futbol-gunes-b');
@@ -260,5 +260,5 @@ PLANLAR['futbol-gunes-b'] = {
 		...futbolB.cekimler,
 	],
 	kartlar: [{bas: 0.3, son: 4.6, baslik: '~4 KM', alt: 'Voyager 1, Taksim’den Ortaköy’e', renk: '#7cf0a8'}, ...futbolB.kartlar],
-	kapanisBas: futbolB.kapanisBas,
+	kapanisBas: 43.9,
 };

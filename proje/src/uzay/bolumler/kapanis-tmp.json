@@ -1,0 +1,70 @@
+{
+ "id": "kapanis-tmp",
+ "baslik": "kapanis",
+ "ses": "bolumler/kapanis-tmp/ses.mp3",
+ "toplam": 6.26,
+ "sahneler": [
+  {
+   "sahne": "kapanis",
+   "bas": 0.0,
+   "son": 5.062
+  }
+ ],
+ "kelimeler": [
+  {
+   "k": "Evrenin",
+   "bas": 0.0,
+   "son": 0.453
+  },
+  {
+   "k": "bir",
+   "bas": 0.569,
+   "son": 0.708
+  },
+  {
+   "k": "sonraki",
+   "bas": 0.731,
+   "son": 1.103
+  },
+  {
+   "k": "sorusu,",
+   "bas": 1.149,
+   "son": 1.66
+  },
+  {
+   "k": "yarın",
+   "bas": 1.846,
+   "son": 2.113
+  },
+  {
+   "k": "yine",
+   "bas": 2.171,
+   "son": 2.357
+  },
+  {
+   "k": "burada",
+   "bas": 2.403,
+   "son": 2.635
+  },
+  {
+   "k": "olacak.",
+   "bas": 2.659,
+   "son": 3.181
+  },
+  {
+   "k": "Abone",
+   "bas": 3.634,
+   "son": 3.936
+  },
+  {
+   "k": "ol,",
+   "bas": 3.971,
+   "son": 4.191
+  },
+  {
+   "k": "kaçırma.",
+   "bas": 4.342,
+   "son": 5.062
+  }
+ ]
+}

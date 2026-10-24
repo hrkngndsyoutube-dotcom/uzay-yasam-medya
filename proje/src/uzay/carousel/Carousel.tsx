@@ -69,6 +69,18 @@ export const CAROUSELLER: Record<string, CarouselSet> = {
 			{tur: 'son', arka: 'carousel/turkiye/t0.jpg', sigdir: true, ust: 'SEN HANGİ', vurgu: 'IŞIKTASIN?', metin: 'Yorumlara şehrini yaz 👇'},
 		],
 	},
+	'saricicek-gokdasi': {
+		id: 'saricicek-gokdasi',
+		slaytlar: [
+			{tur: 'kapak', arka: 'carousel/saricicek/a1.jpg', kaynak: 'Yapay zekâ canlandırması', ust: 'BİNGÖL’E', vurgu: 'UZAYDAN TAŞ YAĞDI', metin: 'Nereden geldiği 3. slaytta →'},
+			{tur: 'bilgi', arka: 'carousel/saricicek/a1.jpg', kaynak: 'Yapay zekâ canlandırması', no: '01', ust: '2 EYLÜL 2015', vurgu: 'GÖKYÜZÜ YARILDI', rakam: '17 KM/SN', metin: 'Bir ateş topu atmosfere girdi ve 37 ila 27 km yükseklikte parçalara ayrıldı.'},
+			{tur: 'bilgi', arka: 'carousel/saricicek/a2.jpg', kaynak: 'Yapay zekâ canlandırması', no: '02', ust: 'SARIÇİÇEK KÖYÜ', vurgu: 'TAŞ AVINA ÇIKTI', rakam: '343 PARÇA', metin: 'Köylüler parçaları toplayıp sattı. Bir köylüye göre sadece o köyde “40 araç parasına yakın” taş bulundu.'},
+			{tur: 'bilgi', arka: 'carousel/saricicek/v0.jpg', sigdir: true, kaynak: 'NASA/JPL-Caltech/UCLA/MPS/DLR/IDA', no: '03', ust: 'PEKİ NEREDEN GELDİ?', vurgu: 'ASTEROİT VESTA', rakam: '~525 KM ÇAP', metin: 'Taşın yapısı, Güneş Sistemi’nin en büyük asteroitlerinden Vesta ile eşleşiyor.'},
+			{tur: 'bilgi', arka: 'carousel/saricicek/a4.jpg', kaynak: 'Yapay zekâ canlandırması', no: '04', ust: 'BİR ÇARPIŞMAYLA', vurgu: 'KOPUP GELDİ', rakam: '22 MİLYON YIL', metin: '2019’daki bir çalışmaya göre taş, Vesta’daki 16,7 km’lik bir kraterden yaklaşık 22 milyon yıl önce fırlatıldı.'},
+			{tur: 'bilgi', arka: 'carousel/saricicek/a3.jpg', kaynak: 'Yapay zekâ canlandırması', no: '05', ust: 'DÜNYADA BİR İLK', vurgu: 'TÜRKİYE’DEN', rakam: 'İLK HOWARDİT DÜŞÜŞÜ', metin: 'Düşüşü kaydedilen ve parçaları toplanan ilk howardit tipi göktaşı. Bilim dünyasına Bingöl’den girdi.'},
+			{tur: 'son', arka: 'carousel/saricicek/a2.jpg', kaynak: 'Yapay zekâ canlandırması', ust: 'SENİN TARLANA DÜŞSE', vurgu: 'SATAR MIYDIN?', metin: 'Yoksa saklar mıydın? Yorumlara yaz 👇'},
+		],
+	},
 };
 
 const gumus: React.CSSProperties = {
