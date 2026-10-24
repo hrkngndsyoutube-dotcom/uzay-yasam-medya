@@ -43,9 +43,10 @@ export type RotaProps = {
 	basEtiket: [string, string];
 	sonEtiket: [string, string];
 	ortaEtiket: string;
+	zSon?: number; // son kamera uzaklığı (geniş rotalar için büyüt)
 };
 
-export const Rota3D: React.FC<RotaProps> = ({sure, bas, hedefYon, oran, basEtiket, sonEtiket, ortaEtiket}) => {
+export const Rota3D: React.FC<RotaProps> = ({sure, bas, hedefYon, oran, basEtiket, sonEtiket, ortaEtiket, zSon = 4.3}) => {
 	const f = useCurrentFrame();
 	const {width, height} = useVideoConfig();
 
@@ -66,7 +67,7 @@ export const Rota3D: React.FC<RotaProps> = ({sure, bas, hedefYon, oran, basEtike
 	const y1 = yuzAci(ortaLat, ortaLon);
 	const rotY = interpolate(p1, [0, 1], [y0.y, y1.y]) + f * 0.0004;
 	const rotX = interpolate(p1, [0, 1], [y0.x, y1.x]);
-	const z = interpolate(p1, [0, 1], [2.1, 4.3]);
+	const z = interpolate(p1, [0, 1], [2.1, zSon]);
 
 	const yildizlar = React.useMemo(() => {
 		const r = tohumlu(91);
@@ -109,7 +110,7 @@ export const Rota3D: React.FC<RotaProps> = ({sure, bas, hedefYon, oran, basEtike
 	const ortaOp = interpolate(ciz, [0.45, 0.6], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
 
 	const etiket = (x: number, y: number, ust: string, alt: string, renk: string, op: number, kay = -50) => (
-		<div style={{position: 'absolute', left: x, top: y, transform: `translate(${kay}%, -150%)`, opacity: op, textAlign: 'center', whiteSpace: 'nowrap'}}>
+		<div style={{position: 'absolute', left: Math.min(Math.max(x, 190), width - 190), top: y, transform: `translate(${kay}%, -150%)`, opacity: op, textAlign: 'center', whiteSpace: 'nowrap'}}>
 			<div style={{fontFamily: 'UzayKapak, Impact, sans-serif', fontSize: 56, color: renk, lineHeight: 1, textShadow: '0 4px 0 rgba(0,0,0,0.9), 0 0 18px rgba(0,0,0,0.9)'}}>{ust}</div>
 			{alt ? <div style={{fontFamily: 'UzayYazi, sans-serif', fontSize: 30, color: '#e8eef5', marginTop: 4, textShadow: '0 2px 8px rgba(0,0,0,1)'}}>{alt}</div> : null}
 		</div>

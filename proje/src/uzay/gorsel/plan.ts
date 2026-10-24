@@ -262,3 +262,47 @@ PLANLAR['futbol-gunes-b'] = {
 	kartlar: [{bas: 0.3, son: 4.6, baslik: '~4 KM', alt: 'Voyager 1, Taksim’den Ortaköy’e', renk: '#7cf0a8'}, ...futbolB.kartlar],
 	kapanisBas: 43.9,
 };
+
+// 1453 AY TUTULMASI — tarihin_sifir_noktasi ile ortak (collab) video
+PLANLAR['ay-1453'] = {
+	acilis: {etiket: '', ust: '', vurgu: '', alt: ''},
+	acilisSure: 0,
+	darbeSesi: 'muzik/darbe.wav',
+	cekimler: [
+		{gorsel: 'g01.jpg', bas: 0, hareket: 'yaklas', efekt: ['sarsinti', 'kor'], odak: [0.5, 0.3]},
+		{gorsel: 'g10.jpg', bas: 3.3, hareket: 'yukari', odak: [0.5, 0.35]},
+		{gorsel: 'g02.jpg', bas: 5.7, hareket: 'yaklas', efekt: ['karar'], odak: [0.5, 0.3]},
+		{gorsel: 'g03.jpg', bas: 10.7, hareket: 'sola', efekt: ['kor'], odak: [0.5, 0.45]},
+		{gorsel: 'kapak-a.jpg', bas: 14.2, hareket: 'yaklas', efekt: ['toz'], odak: [0.5, 0.35]},
+		{gorsel: 'g02.jpg', bas: 19.4, hareket: 'uzaklas', odak: [0.5, 0.3]},
+		{gorsel: 'g04.jpg', bas: 22.0, hareket: 'yaklas', efekt: ['sarsinti'], odak: [0.5, 0.5]},
+		{gorsel: 'g05.jpg', bas: 24.2, hareket: 'yukari', efekt: ['toz'], odak: [0.5, 0.45]},
+		{gorsel: 'g06.jpg', bas: 26.1, hareket: 'yaklas', efekt: ['kor'], odak: [0.5, 0.35]},
+		{gorsel: 'g07.jpg', bas: 31.8, hareket: 'yukari', efekt: ['sarsinti'], odak: [0.5, 0.4]},
+		{gorsel: '3d:kuwae', bas: 34.2, hareket: 'yaklas'},
+		{gorsel: 'g08.jpg', bas: 39.4, hareket: 'uzaklas', odak: [0.5, 0.5]},
+		{gorsel: 'g02.jpg', bas: 43.5, hareket: 'yaklas', odak: [0.5, 0.3]},
+		{gorsel: 'g09.jpg', bas: 45.7, hareket: 'yaklas', efekt: ['sarsinti', 'toz'], odak: [0.5, 0.4]},
+		{gorsel: 'g10.jpg', bas: 49.8, hareket: 'yaklas', odak: [0.5, 0.35]},
+		{gorsel: 'kapak-a.jpg', bas: 54.5, hareket: 'yaklas', efekt: ['karar', 'toz'], odak: [0.5, 0.35]},
+	],
+	kartlar: [
+		{bas: 0.6, son: 3.2, baslik: '22 MAYIS 1453', alt: 'İstanbul kuşatması yedinci haftasında', renk: '#ffd23f'},
+		{bas: 15.0, son: 19.3, baslik: 'KEHANET', alt: 'rivayete göre: “Ay büyürken şehir düşmez”', renk: '#ff8a3d'},
+		{bas: 23.3, son: 26.0, baslik: 'DOLU + SİS', alt: 'mayıs sonunda, beklenmedik', renk: '#cfd8e3'},
+		{bas: 46.1, son: 49.6, baslik: '29 MAYIS 1453', alt: 'İstanbul’un fethi', renk: '#ff4d4d'},
+	],
+	kapanisBas: 54.5,
+	muzik: 'muzik/uzay-ambient.wav',
+};
+const ay1453B = sahneKaydir(PLANLAR['ay-1453'], 'ay-1453', 'ay-1453-b');
+PLANLAR['ay-1453-b'] = {
+	...PLANLAR['ay-1453'],
+	cekimler: [
+		{gorsel: 'g02.jpg', bas: 0, hareket: 'yaklas', efekt: ['sarsinti', 'karar'], odak: [0.5, 0.3]},
+		{gorsel: 'g03.jpg', bas: 3.9, hareket: 'sola', efekt: ['kor'], odak: [0.5, 0.45]},
+		...ay1453B.cekimler,
+	],
+	kartlar: [{bas: 0.5, son: 3.8, baslik: '7 GÜN ÖNCE', alt: 'fetihten önce Ay karardı', renk: '#ffd23f'}, ...ay1453B.kartlar],
+	kapanisBas: ay1453B.kapanisBas,
+};

@@ -8,6 +8,8 @@ import apophis from './apophis.json';
 import apophisB from './apophis-b.json';
 import futbolGunes from './futbol-gunes.json';
 import futbolGunesB from './futbol-gunes-b.json';
+import ay1453 from './ay-1453.json';
+import ay1453B from './ay-1453-b.json';
 
 export type BolumZaman = {
 	id: string;
@@ -28,4 +30,6 @@ export const BOLUMLER: Record<string, BolumZaman> = {
 	'apophis-b': apophisB as BolumZaman,
 	'futbol-gunes': futbolGunes as BolumZaman,
 	'futbol-gunes-b': futbolGunesB as BolumZaman,
+	'ay-1453': ay1453 as BolumZaman,
+	'ay-1453-b': ay1453B as BolumZaman,
 };

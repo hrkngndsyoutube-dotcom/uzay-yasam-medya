@@ -1,0 +1,68 @@
+{
+ "id": "ay-1453",
+ "baslik": "1453'te Ay Karardı",
+ "ses": {
+  "voice_id": "RXCCWbOxP7Hisa63Xsv5",
+  "ad": "Adam - Calm, Relaxing and Informative",
+  "model": "eleven_multilingual_v2",
+  "ayar": {
+   "stability": 0.4,
+   "similarity_boost": 0.8,
+   "style": 0.35,
+   "use_speaker_boost": true,
+   "speed": 1.12
+  }
+ },
+ "altyaziDuzelt": [
+  [
+   "yirmi iki mayıs",
+   "22 Mayıs"
+  ],
+  [
+   "bin dört yüz elli üç",
+   "1453"
+  ],
+  [
+   "on beş bin",
+   "15.000"
+  ],
+  [
+   "yirmi dokuz mayıs'ta",
+   "29 Mayıs'ta"
+  ],
+  [
+   "yirmi dokuz mayıs",
+   "29 Mayıs"
+  ]
+ ],
+ "sahneler": [
+  {
+   "sahne": "hook",
+   "metin": "Yirmi iki Mayıs bin dört yüz elli üç gecesi, İstanbul surlarında nöbettesin. Ve gökyüzünde Ay, yavaş yavaş kararıyor."
+  },
+  {
+   "sahne": "tutulma",
+   "metin": "Bu bir Ay tutulmasıydı. Ama surların içindekiler için bir işaretti. Rivayete göre eski bir kehanet, Ay büyürken şehrin düşmeyeceğini söylüyordu. Ve o gece Ay, küçülmeye başladı."
+  },
+  {
+   "sahne": "isaretler",
+   "metin": "Sonraki günlerde şehre dolu yağdı, yoğun bir sis çöktü. Dönemin yazarları, bir gece Ayasofya'nın kubbesini alev gibi bir ışığın sardığını anlattı."
+  },
+  {
+   "sahne": "kuwae",
+   "metin": "Bugün bazı bilim insanları bunun cevabını on beş bin kilometre ötede arıyor: Pasifik'teki Kuwae yanardağı. Atmosfere yayılan kül, Ay'ı daha da karartmış olabilir. Ama bu hâlâ kanıtlanmış değil."
+  },
+  {
+   "sahne": "fetih",
+   "metin": "Yedi gün sonra, yirmi dokuz Mayıs'ta, İstanbul fethedildi."
+  },
+  {
+   "sahne": "soru",
+   "metin": "Sen o gece surlarda olsaydın, gökyüzünü bir işaret olarak mı görürdün?"
+  },
+  {
+   "sahne": "kapanis",
+   "metin": "Evrenin bir sonraki sorusu yarın yine burada olacak. Abone ol, kaçırma."
+  }
+ ]
+}

@@ -272,6 +272,19 @@ export const GorselShort: React.FC<GorselShortProps> = ({bolum, plan: planAdi, s
 							<Gecis3D sure={son - bas}>
 								<Apophis3D sure={son - bas} />
 							</Gecis3D>
+						) : c.gorsel === '3d:kuwae' ? (
+							<Gecis3D sure={son - bas}>
+								<Rota3D
+									sure={son - bas}
+									bas={[-16.83, 168.54]}
+									hedefYon={[41.008, 28.98]}
+									oran={1}
+									basEtiket={['KUWAE', 'Pasifik, Vanuatu']}
+									sonEtiket={['İSTANBUL', 'Mayıs 1453']}
+									ortaEtiket="15.000 KM"
+									zSon={6.2}
+								/>
+							</Gecis3D>
 						) : c.gorsel === '3d:proxima' ? (
 							<Gecis3D sure={son - bas}>
 								<Rota3D
