@@ -18,6 +18,7 @@ import {tohumlu} from '../gok';
 import {Cekim, GorselPlan, Kart, PLANLAR} from './plan';
 import {Apophis3D} from './Apophis3D';
 import {Rota3D} from './Rota3D';
+import {SokDalgasi} from './SokDalgasi';
 
 // GÖRSEL TABANLI UZAY SHORT'U (1080x1920)
 // Fotogerçekçi görseller + sinematik hareket + poster başlık + kartlar + altyazı + müzik
@@ -271,6 +272,23 @@ export const GorselShort: React.FC<GorselShortProps> = ({bolum, plan: planAdi, s
 						{c.gorsel === '3d:apophis' ? (
 							<Gecis3D sure={son - bas}>
 								<Apophis3D sure={son - bas} />
+							</Gecis3D>
+						) : c.gorsel === '3d:sok-ist' ? (
+							<Gecis3D sure={son - bas}>
+								<SokDalgasi sure={son - bas} yaricapKm={26} />
+							</Gecis3D>
+						) : c.gorsel === '3d:tunguska' ? (
+							<Gecis3D sure={son - bas}>
+								<Rota3D
+									sure={son - bas}
+									bas={[60.886, 101.894]}
+									hedefYon={[41.037, 28.985]}
+									oran={1}
+									basEtiket={['TUNGUSKA', 'Sibirya, 1908']}
+									sonEtiket={['İSTANBUL', 'Taksim']}
+									ortaEtiket="5.200 KM"
+									zSon={4.6}
+								/>
 							</Gecis3D>
 						) : c.gorsel === '3d:kuwae' ? (
 							<Gecis3D sure={son - bas}>

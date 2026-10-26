@@ -10,6 +10,8 @@ import futbolGunes from './futbol-gunes.json';
 import futbolGunesB from './futbol-gunes-b.json';
 import ay1453 from './ay-1453.json';
 import ay1453B from './ay-1453-b.json';
+import tunguska from './tunguska.json';
+import tunguskaB from './tunguska-b.json';
 
 export type BolumZaman = {
 	id: string;
@@ -32,4 +34,6 @@ export const BOLUMLER: Record<string, BolumZaman> = {
 	'futbol-gunes-b': futbolGunesB as BolumZaman,
 	'ay-1453': ay1453 as BolumZaman,
 	'ay-1453-b': ay1453B as BolumZaman,
+	'tunguska': tunguska as BolumZaman,
+	'tunguska-b': tunguskaB as BolumZaman,
 };

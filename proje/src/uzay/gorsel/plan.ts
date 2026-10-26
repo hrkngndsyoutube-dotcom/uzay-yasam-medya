@@ -306,3 +306,44 @@ PLANLAR['ay-1453-b'] = {
 	kartlar: [{bas: 0.5, son: 3.8, baslik: '7 GÜN ÖNCE', alt: 'fetihten önce Ay karardı', renk: '#ffd23f'}, ...ay1453B.kartlar],
 	kapanisBas: ay1453B.kapanisBas,
 };
+
+// TUNGUSKA — "Taksim'in üstünde patlasaydı" (gerçek ölçekli şok dalgası haritası + 3D rota)
+PLANLAR['tunguska'] = {
+	acilis: {etiket: '', ust: '', vurgu: '', alt: ''},
+	acilisSure: 0,
+	darbeSesi: 'muzik/darbe.wav',
+	cekimler: [
+		{gorsel: 'g01.jpg', bas: 0, hareket: 'yaklas', efekt: ['sarsinti', 'kor'], odak: [0.5, 0.35]},
+		{gorsel: '3d:sok-ist', bas: 1.0, hareket: 'yaklas'},
+		{gorsel: 'g02.jpg', bas: 6.8, hareket: 'yukari', efekt: ['toz'], odak: [0.5, 0.3]},
+		{gorsel: '3d:tunguska', bas: 12.6, hareket: 'yaklas'},
+		{gorsel: 'g03.jpg', bas: 17.3, hareket: 'yaklas', efekt: ['sarsinti', 'kor'], odak: [0.5, 0.4]},
+		{gorsel: 'g04.jpg', bas: 23.0, hareket: 'uzaklas', efekt: ['toz'], odak: [0.5, 0.5]},
+		{gorsel: 'g05.jpg', bas: 28.4, hareket: 'yaklas', efekt: ['sarsinti'], odak: [0.5, 0.45]},
+		{gorsel: 'g06.jpg', bas: 33.8, hareket: 'sola', odak: [0.5, 0.5]},
+		{gorsel: 'g07.jpg', bas: 36.3, hareket: 'uzaklas', odak: [0.5, 0.5]},
+		{gorsel: 'g08.jpg', bas: 38.1, hareket: 'yaklas', efekt: ['toz'], odak: [0.5, 0.45]},
+		{gorsel: 'g09.jpg', bas: 45.3, hareket: 'yaklas', efekt: ['karar'], odak: [0.5, 0.35]},
+	],
+	kartlar: [
+		{bas: 19.9, son: 22.9, baslik: '185 HİROŞİMA', alt: 'açığa çıkan enerji (NASA tahmini)', renk: '#ff8a3d'},
+		{bas: 23.2, son: 27.9, baslik: '80 MİLYON AĞAÇ', alt: '2.000 km²’den fazla orman yerle bir', renk: '#ffd23f'},
+		{bas: 28.4, son: 33.6, baslik: '65 KM', alt: 'patlama bu uzaklıktaki adamı sandalyesinden fırlattı', renk: '#ff4d4d'},
+		{bas: 40.0, son: 42.0, baslik: '~300 YILDA BİR', alt: 'tahmini sıklık', renk: '#cfd8e3'},
+		{bas: 43.2, son: 45.2, baslik: '118 YIL', alt: 'son büyük patlamadan bu yana', renk: '#38d9ff'},
+	],
+	kapanisBas: 47.9,
+	muzik: 'muzik/uzay-ambient.wav',
+};
+const tunguskaB = sahneKaydir(PLANLAR['tunguska'], 'tunguska', 'tunguska-b');
+PLANLAR['tunguska-b'] = {
+	...PLANLAR['tunguska'],
+	cekimler: [
+		{gorsel: 'g05.jpg', bas: 0, hareket: 'yaklas', efekt: ['sarsinti', 'kor'], odak: [0.5, 0.45]},
+		{gorsel: 'g06.jpg', bas: 3.7, hareket: 'sola', odak: [0.5, 0.5]},
+		{gorsel: 'g02.jpg', bas: 6.7, hareket: 'yukari', efekt: ['toz'], odak: [0.5, 0.3]},
+		...tunguskaB.cekimler,
+	],
+	kartlar: tunguskaB.kartlar,
+	kapanisBas: tunguskaB.kapanisBas,
+};

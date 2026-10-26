@@ -81,6 +81,18 @@ export const CAROUSELLER: Record<string, CarouselSet> = {
 			{tur: 'son', arka: 'carousel/saricicek/a2.jpg', kaynak: 'Yapay zekâ canlandırması', ust: 'SENİN TARLANA DÜŞSE', vurgu: 'SATAR MIYDIN?', metin: 'Yoksa saklar mıydın? Yorumlara yaz 👇'},
 		],
 	},
+	'turkiye-uzay-ilkler': {
+		id: 'turkiye-uzay-ilkler',
+		slaytlar: [
+			{tur: 'kapak', arka: 'carousel/tr-uzay/k0.jpg', kaynak: 'Yapay zekâ canlandırması', ust: 'UZAYDA', vurgu: 'TÜRKİYE’NİN 5 İLKİ', metin: '1. madde 3 yıl yaşadı →'},
+			{tur: 'bilgi', arka: 'carousel/tr-uzay/k1.jpg', kaynak: 'Yapay zekâ canlandırması', no: '01', ust: '1577 · İSTANBUL', vurgu: 'RASATHANE KURULDU', rakam: 'SADECE 3 YIL', metin: 'Takıyyüddin’in Tophane sırtlarındaki rasathanesi, 22 Ocak 1580’de bir fermanla aletleriyle birlikte yıktırıldı.'},
+			{tur: 'bilgi', arka: 'carousel/tr-uzay/k2.jpg', kaynak: 'Yapay zekâ canlandırması', no: '02', ust: '11 AĞUSTOS 1994', vurgu: 'İLK HABERLEŞME UYDUSU', rakam: 'TÜRKSAT 1B', metin: 'Türkiye, kendi haberleşme uydusuyla ilk kez uzaya yerleşti.'},
+			{tur: 'bilgi', arka: 'carousel/tr-uzay/k3.jpg', kaynak: 'Yapay zekâ canlandırması', no: '03', ust: '19 OCAK 2024', vurgu: 'İLK TÜRK ASTRONOT', rakam: '~3 HAFTA', metin: 'Alper Gezeravcı, Uluslararası Uzay İstasyonu’na giderek bilimsel deneyler yaptı.'},
+			{tur: 'bilgi', arka: 'carousel/tr-uzay/k4.jpg', kaynak: 'Yapay zekâ canlandırması', no: '04', ust: '8 HAZİRAN 2024', vurgu: 'İKİNCİ TÜRK ASTRONOT', rakam: 'UZAYIN SINIRI', metin: 'Tuva Cihangir Atasever, alt yörüngesel bir araştırma uçuşuyla uzaya çıktı.'},
+			{tur: 'bilgi', arka: 'carousel/tr-uzay/k5.jpg', kaynak: 'Yapay zekâ canlandırması', no: '05', ust: '9 TEMMUZ 2024', vurgu: 'İLK YERLİ HABERLEŞME UYDUSU', rakam: 'TÜRKSAT 6A', metin: 'Türkiye’nin ilk yerli ve milli haberleşme uydusu fırlatıldı.'},
+			{tur: 'son', arka: 'carousel/tr-uzay/k0.jpg', kaynak: 'Yapay zekâ canlandırması', ust: 'SIRADAKİ İLK', vurgu: 'NE OLMALI?', metin: 'Ay’a iniş mi, yerli roket mi? Yorumlara yaz 👇'},
+		],
+	},
 };
 
 const gumus: React.CSSProperties = {

@@ -1,0 +1,84 @@
+{
+ "id": "tunguska",
+ "baslik": "Taksim'in Üstünde Patlasaydı",
+ "ses": {
+  "voice_id": "RXCCWbOxP7Hisa63Xsv5",
+  "ad": "Adam - Calm, Relaxing and Informative",
+  "model": "eleven_multilingual_v2",
+  "ayar": {
+   "stability": 0.4,
+   "similarity_boost": 0.8,
+   "style": 0.35,
+   "use_speaker_boost": true,
+   "speed": 1.12
+  }
+ },
+ "altyaziDuzelt": [
+  [
+   "bin dokuz yüz sekizde",
+   "1908'de"
+  ],
+  [
+   "bin dokuz yüz sekiz",
+   "1908"
+  ],
+  [
+   "otuz haziran",
+   "30 Haziran"
+  ],
+  [
+   "yüz seksen beş",
+   "185"
+  ],
+  [
+   "iki bin yüz",
+   "2.100"
+  ],
+  [
+   "seksen milyon",
+   "80 milyon"
+  ],
+  [
+   "altmış beş",
+   "65"
+  ],
+  [
+   "üç yüz",
+   "300"
+  ],
+  [
+   "yüz on sekiz",
+   "118"
+  ]
+ ],
+ "sahneler": [
+  {
+   "sahne": "hook",
+   "metin": "Bu taş Taksim'in üstünde patlasaydı, şok dalgası Kartal'dan Arnavutköy'e kadar bütün İstanbul'u süpürürdü. Ve bu, bin dokuz yüz sekizde gerçekten oldu."
+  },
+  {
+   "sahne": "olay",
+   "metin": "Otuz Haziran bin dokuz yüz sekiz. Sibirya'da, Tunguska'da, bir apartman büyüklüğünde bir gök cismi, yere çarpmadan havada patladı."
+  },
+  {
+   "sahne": "enerji",
+   "metin": "Açığa çıkan enerji, yaklaşık yüz seksen beş Hiroşima bombası kadardı. İki bin yüz kilometrekarelik ormanda, seksen milyon ağaç tek anda yere serildi."
+  },
+  {
+   "sahne": "tanik",
+   "metin": "Altmış beş kilometre ötedeki bir adam sandalyesinden fırladı, gömleği alev almış gibi yandı. Bu, Taksim'den Silivri'ye olan uzaklık."
+  },
+  {
+   "sahne": "issiz",
+   "metin": "Neyse ki düştüğü yer ıssızdı."
+  },
+  {
+   "sahne": "sonraki",
+   "metin": "Tahminlere göre böyle bir olay yaklaşık üç yüz yılda bir yaşanıyor. Son seferin üzerinden yüz on sekiz yıl geçti. Ve bir sonrakinin nereye düşeceğini kimse bilmiyor."
+  },
+  {
+   "sahne": "kapanis",
+   "metin": "Evrenin bir sonraki sorusu yarın yine burada olacak. Abone ol, kaçırma."
+  }
+ ]
+}
