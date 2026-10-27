@@ -93,6 +93,18 @@ export const CAROUSELLER: Record<string, CarouselSet> = {
 			{tur: 'son', arka: 'carousel/tr-uzay/k0.jpg', kaynak: 'Yapay zekâ canlandırması', ust: 'SIRADAKİ İLK', vurgu: 'NE OLMALI?', metin: 'Ay’a iniş mi, yerli roket mi? Yorumlara yaz 👇'},
 		],
 	},
+	'kil-payi': {
+		id: 'kil-payi',
+		slaytlar: [
+			{tur: 'kapak', arka: 'carousel/kil-payi/k0.jpg', parlaklik: 1.05, kaynak: 'Yapay zekâ canlandırması', ust: 'DÜNYAYI KIL PAYI', vurgu: 'KURTARAN 5 AN', metin: '5.’sini kimse görmedi →'},
+			{tur: 'bilgi', arka: 'carousel/kil-payi/k1.jpg', kaynak: 'Yapay zekâ canlandırması', no: '01', ust: '23 MAYIS 1967', vurgu: 'GÜNEŞ RADARLARI KÖR ETTİ', rakam: 'UÇAKLAR HAZIRDI', metin: 'Bir Güneş fırtınası ABD radarlarını bozdu. Sovyet saldırısı sanıldı, savaş uçakları hazırlandı. Uzay hava durumu uzmanları son anda gerçeği söyledi.'},
+			{tur: 'bilgi', arka: 'carousel/kil-payi/k2.jpg', kaynak: 'Yapay zekâ canlandırması', no: '02', ust: '26 EYLÜL 1983', vurgu: 'UYDU 5 FÜZE GÖRDÜ', rakam: 'BULUTA VURAN GÜNEŞ', metin: 'Sovyet uydusu bulutlardan yansıyan Güneş ışığını ABD füzesi sandı. Nöbetçi subay Stanislav Petrov bunun yanlış alarm olduğuna karar verdi.'},
+			{tur: 'bilgi', arka: 'carousel/kil-payi/k3.jpg', kaynak: 'Yapay zekâ canlandırması', no: '03', ust: '25 OCAK 1995', vurgu: 'NÜKLEER ÇANTA AÇILDI', rakam: '10 DAKİKANIN 8’İ', metin: 'Kuzey ışıklarını inceleyen bir Norveç roketi nükleer füze sanıldı. Yeltsin çantayı açtı; roketin Rusya’dan uzaklaştığı görülünce karşılık verilmedi.'},
+			{tur: 'bilgi', arka: 'carousel/kil-payi/k4.jpg', kaynak: 'Yapay zekâ canlandırması', no: '04', ust: 'TEMMUZ 2012', vurgu: 'SÜPER FIRTINA ISKALADI', rakam: '~1 HAFTA', metin: 'Dev bir Güneş patlaması Dünya’nın yörüngesinden geçti. NASA’ya göre bir hafta önce olsaydı Dünya tam hedefteydi: küresel elektrik kesintileri.'},
+			{tur: 'bilgi', arka: 'carousel/kil-payi/k5.jpg', kaynak: 'Yapay zekâ canlandırması', no: '05', ust: '25 TEMMUZ 2019', vurgu: 'KİMSE GÖRMEDİ', rakam: '73.000 KM', metin: '57–130 metrelik “şehir katili” asteroit 2019 OK, Dünya’nın yanından geçti. Geçişi yalnızca birkaç saat önce duyurulabildi.'},
+			{tur: 'son', arka: 'carousel/kil-payi/k0.jpg', kaynak: 'Yapay zekâ canlandırması', ust: 'SENCE HANGİSİ', vurgu: 'EN YAKINDI?', metin: 'Numarasını yorumlara yaz 👇'},
+		],
+	},
 };
 
 const gumus: React.CSSProperties = {

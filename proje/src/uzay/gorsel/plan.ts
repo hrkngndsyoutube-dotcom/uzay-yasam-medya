@@ -347,3 +347,51 @@ PLANLAR['tunguska-b'] = {
 	kartlar: tunguskaB.kartlar,
 	kapanisBas: tunguskaB.kapanisBas,
 };
+
+// NORVEÇ ROKETİ 1995 — "Nükleer savaşa 2 dakika" (kanca sonu vaat eder, sonda verir)
+PLANLAR['norvec-roket'] = {
+	acilis: {etiket: '', ust: '', vurgu: '', alt: ''},
+	acilisSure: 0,
+	darbeSesi: 'muzik/darbe.wav',
+	cekimler: [
+		{gorsel: 'g04.jpg', bas: 0, hareket: 'yaklas', efekt: ['sarsinti'], odak: [0.55, 0.4]},
+		{gorsel: 'g08.jpg', bas: 2.1, hareket: 'yaklas', efekt: ['karar'], odak: [0.5, 0.45]},
+		{gorsel: 'g01.jpg', bas: 5.2, hareket: 'yukari', efekt: ['toz'], odak: [0.5, 0.4]},
+		{gorsel: '3d:norvec', bas: 7.6, hareket: 'yaklas'},
+		{gorsel: 'g02.jpg', bas: 11.4, hareket: 'yaklas', efekt: ['sarsinti'], odak: [0.5, 0.45]},
+		{gorsel: 'g03.jpg', bas: 13.9, hareket: 'yukari', odak: [0.5, 0.35]},
+		{gorsel: 'g05.jpg', bas: 16.3, hareket: 'yaklas', efekt: ['toz'], odak: [0.5, 0.6]},
+		{gorsel: 'g05.jpg', bas: 19.4, hareket: 'sola', odak: [0.4, 0.4]},
+		{gorsel: 'g06.jpg', bas: 22.27, hareket: 'yaklas', efekt: ['sarsinti'], odak: [0.5, 0.55]},
+		{gorsel: 'g07.jpg', bas: 25.0, hareket: 'yaklas', efekt: ['toz'], odak: [0.35, 0.5]},
+		{gorsel: 'g06.jpg', bas: 27.8, hareket: 'uzaklas', efekt: ['kor'], odak: [0.5, 0.5]},
+		{gorsel: 'g08.jpg', bas: 29.7, hareket: 'yaklas', efekt: ['sarsinti', 'karar'], odak: [0.45, 0.45]},
+		{gorsel: 'g09.jpg', bas: 31.86, hareket: 'yukari', efekt: ['aydinlan'], odak: [0.5, 0.35]},
+		{gorsel: 'g10.jpg', bas: 34.8, hareket: 'uzaklas', efekt: ['toz'], odak: [0.5, 0.55]},
+		{gorsel: 'g04.jpg', bas: 37.3, hareket: 'yaklas', efekt: ['karar'], odak: [0.55, 0.4]},
+	],
+	kartlar: [
+		{bas: 1.3, son: 4.9, baslik: '2 DAKİKA', alt: 'nükleer savaşa kalan süre', renk: '#ff4d4d'},
+		{bas: 5.3, son: 7.5, baslik: '25 OCAK 1995', alt: 'Andøya, Norveç', renk: '#ffffff'},
+		{bas: 9.9, son: 11.3, baslik: '1.453 KM', alt: 'roketin çıktığı yükseklik', renk: '#38d9ff'},
+		{bas: 13.1, son: 16.1, baslik: 'NÜKLEER FÜZE?', alt: 'Rus radarının gördüğü', renk: '#ff8a3d'},
+		{bas: 16.5, son: 21.9, baslik: '30 ÜLKE', alt: 'fırlatma önceden bildirilmişti', renk: '#ffd23f'},
+		{bas: 25.1, son: 29.5, baslik: 'İLK KEZ', alt: 'nükleer çanta gerçek alarmla açıldı', renk: '#ff4d4d'},
+		{bas: 29.8, son: 31.7, baslik: '8 / 10 DAKİKA', alt: 'karar süresi dolmak üzere', renk: '#ff4d4d'},
+	],
+	kapanisBas: 38.6,
+	muzik: 'muzik/uzay-ambient.wav',
+};
+const norvecB = sahneKaydir(PLANLAR['norvec-roket'], 'norvec-roket', 'norvec-roket-b');
+PLANLAR['norvec-roket-b'] = {
+	...PLANLAR['norvec-roket'],
+	cekimler: [
+		{gorsel: 'g01.jpg', bas: 0, hareket: 'yaklas', efekt: ['sarsinti', 'toz'], odak: [0.5, 0.4]},
+		{gorsel: 'g03.jpg', bas: 2.8, hareket: 'yukari', odak: [0.5, 0.35]},
+		{gorsel: 'g08.jpg', bas: 4.3, hareket: 'yaklas', efekt: ['karar'], odak: [0.5, 0.45]},
+		{gorsel: 'g06.jpg', bas: 6.07, hareket: 'yaklas', efekt: ['sarsinti'], odak: [0.5, 0.55]},
+		...norvecB.cekimler,
+	],
+	kartlar: [{bas: 3.6, son: 6.0, baslik: '2 DAKİKA', alt: 'nükleer savaşa kalan süre', renk: '#ff4d4d'}, ...norvecB.kartlar],
+	kapanisBas: norvecB.kapanisBas,
+};

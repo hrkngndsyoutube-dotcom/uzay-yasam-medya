@@ -1,0 +1,69 @@
+{
+ "id": "norvec-roket",
+ "baslik": "Nükleer Savaşa 2 Dakika",
+ "ses": {
+  "voice_id": "RXCCWbOxP7Hisa63Xsv5",
+  "ad": "Adam - Calm, Relaxing and Informative",
+  "model": "eleven_multilingual_v2",
+  "seed": 1453,
+  "ayar": {
+   "stability": 0.55,
+   "similarity_boost": 0.8,
+   "style": 0.35,
+   "use_speaker_boost": true,
+   "speed": 1.12
+  }
+ },
+ "altyaziDuzelt": [
+  [
+   "bin dokuz yüz doksan beş",
+   "1995"
+  ],
+  [
+   "on dakikalık",
+   "10 dakikalık"
+  ],
+  [
+   "sekizi",
+   "8'i"
+  ],
+  [
+   "iki dakikada",
+   "2 dakikada"
+  ],
+  [
+   "iki dakika",
+   "2 dakika"
+  ]
+ ],
+ "sahneler": [
+  {
+   "sahne": "hook",
+   "metin": "Bu videonun sonunda, nükleer savaşı son iki dakikada neyin durdurduğunu göreceksin."
+  },
+  {
+   "sahne": "olay",
+   "metin": "Bin dokuz yüz doksan beş. Norveç, kuzey ışıklarını incelemek için bir roket fırlatıyor."
+  },
+  {
+   "sahne": "radar",
+   "metin": "Roket uzaya tırmanıyor. Rus radarları ise onu, bir Amerikan denizaltısından atılmış nükleer füze sanıyor."
+  },
+  {
+   "sahne": "mektup",
+   "metin": "Norveç bu fırlatmayı Rusya'ya önceden bildirmişti. Ama o yazı, orduya hiç ulaşmadı."
+  },
+  {
+   "sahne": "canta",
+   "metin": "Nükleer çanta Yeltsin'in önüne getiriliyor. Tarihte ilk kez bir lider, çantayı gerçek bir saldırı sanarak açıyor. On dakikalık sürenin sekizi doluyor."
+  },
+  {
+   "sahne": "cevap",
+   "metin": "Sonra radardaki iz, Rusya'dan uzaklaşıyor. Savaşı son iki dakikada durduran şey buydu: bir roketin yönü."
+  },
+  {
+   "sahne": "kapanis",
+   "metin": "Evrenin bir sonraki sorusu yarın yine burada olacak. Abone ol, kaçırma."
+  }
+ ]
+}

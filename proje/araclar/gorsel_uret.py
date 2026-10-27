@@ -8,7 +8,7 @@ import requests
 from PIL import Image
 
 KOK = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-STIL = ("Photorealistic cinematic space photography, vertical 9:16 composition, dramatic lighting, rich contrast, "
+STIL = os.environ.get('GORSEL_STIL') or ("Photorealistic cinematic space photography, vertical 9:16 composition, dramatic lighting, rich contrast, "
         "ultra detailed, film grain, no text, no letters, no logos, no watermark. ")
 
 def uret(bolum, p):

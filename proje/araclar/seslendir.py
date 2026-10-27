@@ -46,6 +46,7 @@ def main():
                 'model_id': v.get('model', 'eleven_multilingual_v2'),
                 'language_code': 'tr',
                 'voice_settings': v.get('ayar', {'stability': 0.45, 'similarity_boost': 0.8, 'style': 0.25, 'use_speaker_boost': True}),
+                **({'seed': v['seed']} if 'seed' in v else {}),
             },
             params={'output_format': 'mp3_44100_128'},
             timeout=180,
