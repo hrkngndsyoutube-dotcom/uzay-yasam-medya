@@ -395,3 +395,37 @@ PLANLAR['norvec-roket-b'] = {
 	kartlar: [{bas: 3.6, son: 6.0, baslik: '2 DAKİKA', alt: 'nükleer savaşa kalan süre', renk: '#ff4d4d'}, ...norvecB.kartlar],
 	kapanisBas: norvecB.kapanisBas,
 };
+
+// 2012 GÜNEŞ FIRTINASI — "1 hafta farkla" (kanca sonu vaat eder, sonda 3D ile verir)
+PLANLAR['gunes-2012'] = {
+	acilis: {etiket: '', ust: '', vurgu: '', alt: ''},
+	acilisSure: 0,
+	darbeSesi: 'muzik/darbe.wav',
+	cekimler: [
+		{gorsel: 'g01.jpg', bas: 0, hareket: 'yaklas', efekt: ['sarsinti'], odak: [0.5, 0.45]},
+		{gorsel: 'g08.jpg', bas: 2.7, hareket: 'yaklas', efekt: ['karar'], odak: [0.5, 0.5]},
+		{gorsel: 'g02.jpg', bas: 5.96, hareket: 'yaklas', efekt: ['sarsinti', 'kor'], odak: [0.5, 0.45]},
+		{gorsel: 'g03.jpg', bas: 11.75, hareket: 'yukari', efekt: ['toz'], odak: [0.5, 0.5]},
+		{gorsel: 'g04.jpg', bas: 14.19, hareket: 'yaklas', efekt: ['karar'], odak: [0.5, 0.55]},
+		{gorsel: 'g05.jpg', bas: 17.8, hareket: 'yaklas', efekt: ['sarsinti'], odak: [0.5, 0.5]},
+		{gorsel: 'g06.jpg', bas: 20.99, hareket: 'sola', efekt: ['kor'], odak: [0.5, 0.45]},
+		{gorsel: 'g07.jpg', bas: 23.1, hareket: 'yaklas', odak: [0.5, 0.5]},
+		{gorsel: 'g08.jpg', bas: 24.5, hareket: 'uzaklas', efekt: ['karar'], odak: [0.5, 0.5]},
+		{gorsel: 'g01.jpg', bas: 26.3, hareket: 'yukari', efekt: ['toz'], odak: [0.5, 0.4]},
+		{gorsel: 'g10.jpg', bas: 29.74, hareket: 'yaklas', odak: [0.5, 0.5]},
+		{gorsel: 'g09.jpg', bas: 31.6, hareket: 'yaklas', efekt: ['toz'], odak: [0.5, 0.45]},
+		{gorsel: '3d:firtina', bas: 33.9, hareket: 'yaklas'},
+		{gorsel: 'g11.jpg', bas: 40.3, hareket: 'yaklas', efekt: ['aydinlan'], odak: [0.5, 0.45]},
+		{gorsel: 'g01.jpg', bas: 42.6, hareket: 'yaklas', efekt: ['karar'], odak: [0.5, 0.45]},
+	],
+	kartlar: [
+		{bas: 1.4, son: 5.6, baslik: 'ELEKTRİK', alt: 'neden kesilmedi?', renk: '#ff8a3d'},
+		{bas: 6.1, son: 8.1, baslik: '23 TEMMUZ 2012', alt: 'Güneş patladı', renk: '#ffffff'},
+		{bas: 11.8, son: 14.0, baslik: 'MİLYARLARCA TON', alt: 'plazma uzaya fırladı', renk: '#ffd23f'},
+		{bas: 16.0, son: 20.8, baslik: '6 MİLYON KİŞİ', alt: '1989 · yarısı kadar bir fırtınayla karanlıkta', renk: '#38d9ff'},
+		{bas: 26.8, son: 29.6, baslik: '2 TRİLYON $+', alt: 'tahmini hasar', renk: '#ff4d4d'},
+		{bas: 31.7, son: 33.8, baslik: '2 YIL SONRA', alt: 'çoğumuz öğrendik', renk: '#cfd8e3'},
+	],
+	kapanisBas: 43.9,
+	muzik: 'muzik/uzay-ambient.wav',
+};

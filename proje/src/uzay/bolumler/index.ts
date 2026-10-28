@@ -13,6 +13,7 @@ import ay1453B from './ay-1453-b.json';
 import tunguska from './tunguska.json';
 import norvecRoket from './norvec-roket.json';
 import norvecRoketB from './norvec-roket-b.json';
+import gunes2012 from './gunes-2012.json';
 import tunguskaB from './tunguska-b.json';
 
 export type BolumZaman = {
@@ -40,4 +41,5 @@ export const BOLUMLER: Record<string, BolumZaman> = {
 	'tunguska-b': tunguskaB as BolumZaman,
 	'norvec-roket': norvecRoket as BolumZaman,
 	'norvec-roket-b': norvecRoketB as BolumZaman,
+	'gunes-2012': gunes2012 as BolumZaman,
 };

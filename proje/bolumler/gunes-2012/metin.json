@@ -1,0 +1,73 @@
+{
+ "id": "gunes-2012",
+ "baslik": "1 Hafta Farkla",
+ "ses": {
+  "voice_id": "RXCCWbOxP7Hisa63Xsv5",
+  "ad": "Adam - Calm, Relaxing and Informative",
+  "model": "eleven_multilingual_v2",
+  "seed": 1453,
+  "ayar": {
+   "stability": 0.55,
+   "similarity_boost": 0.8,
+   "style": 0.35,
+   "use_speaker_boost": true,
+   "speed": 1.12
+  }
+ },
+ "altyaziDuzelt": [
+  [
+   "yirmi üç temmuz",
+   "23 Temmuz"
+  ],
+  [
+   "iki bin on iki",
+   "2012"
+  ],
+  [
+   "bin dokuz yüz seksen dokuzda",
+   "1989'da"
+  ],
+  [
+   "altı milyon",
+   "6 milyon"
+  ],
+  [
+   "iki trilyon",
+   "2 trilyon"
+  ],
+  [
+   "iki yıl",
+   "2 yıl"
+  ]
+ ],
+ "sahneler": [
+  {
+   "sahne": "hook",
+   "metin": "Bu videonun sonunda, iki bin on ikide dünyanın elektriğini neyin kurtardığını göreceksin."
+  },
+  {
+   "sahne": "olay",
+   "metin": "Yirmi üç Temmuz, iki bin on iki. Güneş, kayıtlardaki en güçlü patlamalardan birini yapıyor. Milyarlarca ton plazma uzaya fırlıyor."
+  },
+  {
+   "sahne": "quebec",
+   "metin": "Bin dokuz yüz seksen dokuzda bunun yarısı kadar bir fırtına, Kanada'da altı milyon insanı karanlıkta bırakmıştı."
+  },
+  {
+   "sahne": "risk",
+   "metin": "Bu kez isabet etseydi uydular, GPS, internet ve elektrik şebekeleri çökebilirdi. Hasarın iki trilyon doları aşacağı tahmin ediliyor."
+  },
+  {
+   "sahne": "habersiz",
+   "metin": "Ve neredeyse kimse fark etmedi. Çoğumuz bunu iki yıl sonra öğrendik."
+  },
+  {
+   "sahne": "cevap",
+   "metin": "Peki bizi ne kurtardı? Sadece zamanlama. Patlama bir hafta önce olsaydı, Dünya tam hedefteydi. Şu an telefonun çalışıyorsa, bunu bir haftalık şansa borçlusun."
+  },
+  {
+   "sahne": "kapanis",
+   "metin": "Evrenin bir sonraki sorusu yarın yine burada olacak. Abone ol, kaçırma."
+  }
+ ]
+}

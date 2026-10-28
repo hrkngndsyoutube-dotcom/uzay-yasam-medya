@@ -19,6 +19,7 @@ import {Cekim, GorselPlan, Kart, PLANLAR} from './plan';
 import {Apophis3D} from './Apophis3D';
 import {Rota3D} from './Rota3D';
 import {SokDalgasi} from './SokDalgasi';
+import {Firtina3D} from './Firtina3D';
 
 // GÖRSEL TABANLI UZAY SHORT'U (1080x1920)
 // Fotogerçekçi görseller + sinematik hareket + poster başlık + kartlar + altyazı + müzik
@@ -302,6 +303,10 @@ export const GorselShort: React.FC<GorselShortProps> = ({bolum, plan: planAdi, s
 									ortaEtiket="15.000 KM"
 									zSon={6.2}
 								/>
+							</Gecis3D>
+						) : c.gorsel === '3d:firtina' ? (
+							<Gecis3D sure={son - bas}>
+								<Firtina3D sure={son - bas} />
 							</Gecis3D>
 						) : c.gorsel === '3d:norvec' ? (
 							<Gecis3D sure={son - bas}>
